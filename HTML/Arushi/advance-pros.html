@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(121,121,121);
+        }
+        .clip-circle{
+            clip-path: circle(45.1% at 50% 50%);
+        }
+        .clip-cross{
+            clip-path:polygon(20% 0%,0% 20%,30% 50%,0% 80%,20% 100%,50% 70%,80% 100%,100% 80%,70% 50%,100% 20%,80% 0%,50% 30%,20% 0%,0% 20%)
+        } 
+        .clip-rabbet{
+            clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+        }
+        body,html{
+            height: 100%;
+        }
+        img{
+            height: 75%;
+        }
+        div{
+            width: 160px;
+            height: 80px;
+            padding: 20px;
+            border: 8px solid red;
+            background: yellow;
+        }
+        .content-box{
+            box-sizing: content-box;
+            /*Total width: 160px + (2*20px) + (2*8px) = 236px
+              Total height: 80px + (2*20px) + (2*8px) = 36px
+              Content box width:160px
+              Content box height:80px*/
+        }
+        .border-box{
+            box-sizing: border-box;
+            /* Total width: 160px
+            Total height:80px
+            Content box width:160px - (2*20px)-(2*8px)=104px
+            Content box height:80px - (2*20px)-(2*8px)=24px */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <img class="clip-circle" src="./Image/img.png" alt=""> -->
+    <div class="content-box">Content box</div>
+    <br>
+    <div class="border-box">Border box</div>
+</body>
+</html>

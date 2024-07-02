@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>String Function</h1>
+    <script>
+
+        //Length of String
+        const str = "Life, the Universe and everything.";
+        console.log(str.length);
+
+
+        //Concatenation of String
+        str1="Hello";
+        str2="World";
+        console.log(str1.concat(' ',str2));
+
+       // Spliting a String
+       const str3="The quick brown fox.";
+       const words = str3.split(' ');
+       console.log(words);
+
+       //Character at String
+       const index = 4;
+       console.log(str3.charAt(index));
+
+       //Slicing the String
+       console.log(str3.slice(11,14));
+
+       //Convert String to uppercase
+       str4="This iS mY faVouRiTe bOOk.";
+       console.log(str4.toUpperCase());
+       console.log(str4.toLowerCase());
+    </script>
+</body>
+</html>

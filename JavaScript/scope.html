@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scope Variable</h1>
+    <script>
+        // the scope is by default global
+var name = 'Yash';
+
+function sayName(){
+    var marks =10;
+    console.log(name);
+}
+
+sayName()
+   // console.log(marks);
+
+
+ // Global scope
+ var x = 'Indu';
+ function first(){
+    //Local scope #1
+    var x =1;
+    console.log(x);
+    function childOfFirst(){
+        //Local scope #2
+        var x = 2;
+        console.log(x);
+    }
+    childOfFirst();
+ } 
+ first();
+ 
+ //Global scope
+ function second(){
+    console.log(x);
+    //local scope
+ }
+ //Global scope
+ second();
+
+ var x =20;
+{
+    let x = 4;
+    console.log(x);
+}
+console.log(x);
+
+if(true){
+    //this 'if' conditional block doesn't create a new scope
+    var foo = 'bar'; //Use var keyword instead of let keyword
+}
+console.log(foo);
+
+// Lexical scope used as a Inheritance
+function Dada(){
+    var name = "Ram Sanehi Sahu";
+    //likes is not accessible here
+    function Papa(){
+        console.log(name);
+        //name is accessible here
+        //likes is not accessible here
+        function Beta(){
+            //Innermost level of the scope chain
+            //name is also accessible here
+            var likes = 'Coding';
+        }
+        console.log(likes);
+        Beta()
+    }
+    Papa()
+}
+Dada()
+
+
+    </script>
+</body>
+</html>

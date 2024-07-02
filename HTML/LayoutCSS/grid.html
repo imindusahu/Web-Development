@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-gap: 20px;
+            /*grid-auto-columns: minmax(50px,auto);*/
+            grid-auto-columns: minmax(10px,auto);
+        }
+        .items {
+            background-color: lightcoral;
+            border: 5px green solid;
+            border-radius: 5px; 
+        }
+        #item-1{
+           /* grid-row-start: 2px;
+            grid-row-end: 3px;*/
+            grid-column-start:100px ;
+            grid-column-end:100px ;
+        }
+        .item-1-container{
+            display: grid;
+            grid-template-rows: repeat(4,1fr);
+        }
+        .nested-item{
+            border: rgb(36, 52, 11);
+            border-radius: 5px;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--  shorthand -  div.items{Dabba $}*5  -->
+        <div class="items item-1-container" id="item-1"><h2>-*-Grid-*-</h2>A grid is a collection of horizontal and vertical lines creating a pattern against which  we can line up our design elements. They help us to create designs where elements dont jump around or change width as we move from page to page, providing greater consistency on our websites
+            <div class="nested-item">Dabbe me Dabba 1</div>
+            <div class="nested-item">Dabbe me Dabba 2</div>
+            <div class="nested-item">Dabbe me Dabba 3</div>
+            <div class="nested-item">Dabbe me Dabba 4</div>
+        </div>
+        <div class="items" id="item-2">A  grid is a collection of horizontal and vertical lines creating a pattern against which  we can line up our design elements. They help us to create designs where elements don’t jump around or change width as we move from page to page, providing greater consistency on our websites.</div>
+        <div class="items">CSS Grid Layout is a two-dimensional layout system for the web. It lets you lay content out in rows and columns, and has many features that make building complex layouts straightforward.</div>
+        <div class="items">A  grid is a collection of horizontal and vertical lines creating a pattern against which  we can line up our design elements. They help us to create designs where elements don’t jump around or change width as we move from page to page, providing greater consistency on our websites</div>
+        <div class="items">A  grid is a collection of horizontal and vertical lines creating a pattern against which  we can line up our design elements. They help us to create designs where elements don’t jump around or change width as we move from page to page, providing greater consistency on our websites</div>
+        <div class="items">A  grid is a collection of horizontal and vertical lines creating a pattern against which  we can line up our design elements. They help us to create designs where elements don’t jump around or change width as we move from page to page, providing greater consistency on our websites</div>
+    </div>
+</body>
+</html>

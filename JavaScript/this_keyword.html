@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What is this keyword ?</h1>
+    <script>
+       /* let counter = {
+            count : 0,
+            increament : function(){
+                counter.count++;
+            }
+        }
+        
+        //Factory function
+        let counter = createCounter();
+        let counter1 = createCounter();
+        function createCounter(){
+            return {
+                count : 0,
+                increament : function(){
+                    this.count++; // use 'this' keyword instead of counter 
+                    console.log(this);
+                }
+            }
+        }
+
+        //counter1.increament();
+        //counter1.increament();
+        //counter1.increament();
+        counter.increament();
+        counter1.increament();
+       //console.log(counter1)
+        
+
+        var count = 0;
+        function increamentCounter(counter){
+            this.count++;
+            console.log(this);
+        }
+        increamentCounter();
+        increamentCounter();
+        console.log(this);
+        */
+
+        // Constructor function
+        function Car(name){
+            this.name = name;
+            this.start = function(){
+                console.log(this.name + ' started');
+                console.log(this);
+            }
+        }
+        let swift =  Car("Swift");
+       // swift.start();
+       //console.log(this.name);//output - Swift
+        //console.log(this);// window function ko call karega
+        console.log(name);// output - Swift
+
+    </script>
+</body>
+</html>

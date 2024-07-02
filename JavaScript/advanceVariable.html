@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Advance Variable</h1>
+    <script>
+        sayHello(); 
+        console.log(i);
+        function sayHello(){
+       // var sayHello = function(){
+            console.log('Hello');
+        }
+        var i = 10;
+       //sayHello(); 
+        //console.log(i);
+
+      // Working of Shadowing  and illegal Shadowing
+        let foo = 'bar';
+        var bar = 'foo';
+        if(true){
+       // function sayHello(){
+            let foo = 'baz';
+            var bar = 'foobar';
+           console.log(foo);
+           console.log(bar);
+        }
+        sayHello();
+        console.log(foo);
+        console.log(bar);
+
+
+        //Use of const keyword
+        let too;
+        var boo;
+        const zoo = 20;
+    </script>
+</body>
+</html>

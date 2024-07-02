@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+header{
+    padding: 20px;
+    text-align: center;
+    /*Greenish background color*/
+    background-color: rgb(134, 77, 10);
+    /*White text color*/
+    color:white;
+}
+header h1{
+    font-size: 50px;
+}
+nav{
+    background-color: rgb(48, 48, 45);
+    overflow: hidden;
+}
+nav a{
+    font-size: 20px;
+    display: block;
+    color:white;
+    text-decoration: none;
+    padding:15px 15px;
+    float:left;
+}
+section{
+    text-align: center;
+    padding-top: 30px;
+    height: 100vh;
+}
+section:nth-child(even){
+    background-color: rgb(181, 236, 236);
+}
+section:nth-child(odd){
+    background-color: rgb(163, 163, 163);
+}
+iframe{
+    padding-top: 0px 5px;
+}
+img{
+    padding: 0px 30px;
+}
+h2{
+    padding-bottom: 40px;
+}

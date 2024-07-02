@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="specificity.css">
+    <title>Specificity</title>
+    <style>
+        .favourite{
+            color:rgb(230, 93, 24);
+            font-weight: bold;
+        }
+        .favourite{
+            color:rgb(14, 111, 7);
+            font-weight: bold;
+        }
+        ul #summer-drinks li{
+            font-size:12px;
+            color:rgb(145, 7, 7);
+            font-weight: normal;
+        } 
+    </style>
+    <!-- <link rel="stylesheet" href="specificity.css"> -->
+</head>
+<body>
+    <ul id="summer-drinks">
+        <li>Mountain Dew</li>
+         <li class="favourite" >Appy Fizz</li> 
+        <li>Jeeru</li>
+    </ul>
+</body>
+</html>

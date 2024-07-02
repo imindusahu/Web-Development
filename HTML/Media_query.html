@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries: width</title>
+    <style>
+        html{
+            font-size: 1em;
+        }
+
+        @media screen and(width :600px){
+           body{
+            color: red;
+           } 
+        }   
+        @media (orientaion:landscape){
+            body{
+                color: rebeccapurple;
+            }
+        }
+        @media not all and (orientaion:landscape){
+            body{
+                color: rgb(31, 7, 245);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam tempora placeat architecto, dignissimos harum nulla, vel laborum sequi ad nam magnam quidem tempore ipsum iusto aut commodi perspiciatis iste. Ullam!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, fugiat ducimus earum quis voluptatibus soluta quod commodi quam corporis modi reprehenderit illo, suscipit quos veritatis exercitationem vero omnis, praesentium error?</p>
+</body>
+</html>

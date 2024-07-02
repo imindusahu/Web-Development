@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z Index Number</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <style rel="stylesheet" type="text/css">
+        div#layer1 {
+            z-index:1;
+            position:absolute;
+            top: 8px;
+            left: 8px;
+            width: 250px;
+            height: 120px;
+            background-color: rgb(10, 60, 17);
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        div#layer2 {
+            z-index: 2;
+            position:absolute;
+            top: 25px;
+            left: 25px;
+            width: 250px;
+            height: 120px;
+            background-color: rgb(222, 112, 16);
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        div#layer3 {
+            z-index: 3;
+            position:absolute;
+            top: 40px;
+            left: 40px;
+            width: 300px;
+            height: 160px;
+            background-color: rgb(48, 7, 65);
+            border: 1px solid rgb(94, 61, 156);
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="layer1">
+        <h1>Programming Code Example</h1>
+    </div>
+    <div id="layer2">
+        <h1>Programming Code Example</h1>
+    </div>
+    <div id="layer3">
+        <h1>Programming Code Example</h1>
+    </div>
+</body>
+</html>

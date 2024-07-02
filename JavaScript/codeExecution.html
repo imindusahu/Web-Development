@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Execution</title>
+</head>
+<body>
+    <h1>Code Execution</h1>
+    <script>
+        let a = "Namaste World!";
+        function first(){
+            console.log('Inside first function');
+            second();
+            console.log('Again inside first function');
+        }
+        function second(){
+            console.log('Inside second function');
+        }
+        first();
+        console.log('Inside Global Execution Context');
+    </script>
+</body>
+</html>

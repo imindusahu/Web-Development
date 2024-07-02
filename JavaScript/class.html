@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPs</title>
+</head>
+<body>
+    <h1>Object Oriented Programming</h1>
+    <script>
+       /* //Declaring a class
+        class Product{
+            constructor (itemName, price, discount, itemCode){
+                this.itemName = itemName;
+                this.price = price;
+                this.discount = discount;
+                this.itemCode = itemCode;
+            }
+        };
+        let pencil = new Product('Pencil', 20, 2, 'P10');
+
+
+        const Product1 = class Product{
+            constructor (itemName, price, discount, itemCode){
+                this.itemName = itemName;
+                this.price = price;
+                this.discount = discount;
+                this.itemCode = itemCode;
+            }
+            get getDiscountValue(){
+                return this.discount;
+            }
+            set setDiscountValue(value){
+                this.discount = value;
+            }
+        };
+        let chair = new Product1('Chair', 499, 50, 'C10');
+        */
+       
+        //Extend class using extends keyword
+        class Product{
+            constructor(itemName){
+                console.log('Passed by Furniture ' + itemName);
+                this.itemName = itemName;
+            }
+            getitemName(){
+                return this.itemName + 'is a Product.';
+            }
+        }
+        //super() - It is calls the constructor of its parent class.
+        class Furniture extends Product{
+            constructor(itemName){
+                super(itemName);
+            }
+            getitemName(){
+                return this.itemName + 'is a Furniture.';
+            }
+        }
+        let pencil = new Product('Pencil ');
+        let chair = new Furniture('Chair ');
+    </script>
+</body>
+</html>

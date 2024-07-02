@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ol id="elem">
+        <li>Hello</li>
+        <li>World</li>
+    </ol>
+    <button id="clickBtn" onclick="alert('How can I help you ?')">Click Me</button>
+    <script>
+        
+       // function clear(elem) {/*your code*/}
+
+       // clear(elem);//clears the list
+    
+       // Events
+       //Method 01
+      /*let namasteBtn = document.querySelector('button');
+      namasteBtn.addEventListener('click',inputMsg);
+     
+      function inputMsg(){
+        let name = prompt('Enter Name of Student');
+        namasteBtn.textContent = 'Roll No. 1:' + name;
+      }
+
+     //Method 02
+      clickBtn.onclick = function(){
+        alert("Thanks for watching")
+      }
+      */
+      //Method 03
+      function callMe(){
+       // console.log(this)
+       console.log(event.type)
+       console.log(event.currentTarget)
+       console.log(event.clientY)
+       console.log(event.clientX)
+         alert("Thanks for watching")
+      }
+     // clickBtn.onclick = callMe
+      //clickBtn.onclick = callMe()
+     
+      //Method 04
+      clickBtn.addEventListener('click',callMe)
+      /*clickBtn.addEventListener('click',function(){
+        alert("Thanks")
+      })
+
+      clickBtn.removeEventListener('click',callMe)
+      clickBtn.removeEventListener('click',function(){
+        alert("Thanks")
+      })*/
+
+        
+    </script>
+</body>
+</html>
